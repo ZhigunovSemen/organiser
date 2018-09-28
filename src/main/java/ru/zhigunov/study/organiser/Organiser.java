@@ -12,7 +12,7 @@ import java.util.Scanner;
 import java.util.SortedMap;
 import java.util.TreeMap;
 
-public class AppContext {
+public class Organiser {
 
     @Autowired
     ApplicationContext context;
@@ -21,7 +21,7 @@ public class AppContext {
 
     private final SortedMap<String, OrganiserCommand> cmdMap = new TreeMap<String, OrganiserCommand>();;
 
-    public AppContext() {
+    public Organiser() {
         new HelpCommand(this);
         new InsertCommand(this);
     }
@@ -41,6 +41,7 @@ public class AppContext {
     public void run() {
         while (true) {
             scanner = new Scanner(System.in);
+            scanner.hasNext();
             System.out.println(context);
         }
     }
