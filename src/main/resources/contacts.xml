@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<ContactList>
+    <client>
+        <id>2</id>
+        <FIO>example 1</FIO>
+        <jobPost>f</jobPost>
+        <organisation>h</organisation>
+        <email>d</email>
+        <phones>
+            <phone>4</phone>
+            <phone>3</phone>
+            <phone>+72332</phone>
+        </phones>
+    </client>
+    <client>
+        <id>9</id>
+        <FIO>Zhigunov</FIO>
+        <jobPost>job</jobPost>
+        <organisation>org</organisation>
+        <email>example@mail.com</email>
+        <phones>
+            <phone>+7-32-12</phone>
+            <phone>+72332</phone>
+        </phones>
+    </client>
+    <client>
+        <id>10</id>
+        <FIO>Zhigunov_updated</FIO>
+        <jobPost>job_updated</jobPost>
+        <organisation>org_updated</organisation>
+        <email>example@mail.com_updated</email>
+        <phones>
+            <phone>+7-32-12</phone>
+            <phone>+72332</phone>
+            <phone>_updated</phone>
+        </phones>
+    </client>
+</ContactList>
