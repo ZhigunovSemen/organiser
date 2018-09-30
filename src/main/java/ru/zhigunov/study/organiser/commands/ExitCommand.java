@@ -5,15 +5,14 @@ import ru.zhigunov.study.organiser.Organiser;
 import java.io.InputStream;
 import java.io.PrintStream;
 import java.util.Collection;
-import java.util.Map;
 import java.util.Scanner;
 
-public class HelpCommand extends OrganiserCommand {
+public class ExitCommand extends OrganiserCommand {
 
-    private static final String NAME = "help";
-    private static final String DESCRIPTION = "displays help";
+    private static final String NAME = "exit";
+    private static final String DESCRIPTION = "exit from app";
 
-    public HelpCommand(Organiser ctx) {
+    public ExitCommand(Organiser ctx) {
         super(ctx);
     }
 
@@ -29,13 +28,8 @@ public class HelpCommand extends OrganiserCommand {
 
     @Override
     public void execute(String[] args, Scanner scanner, PrintStream out) {
-        Collection<OrganiserCommand> commands = ctx.getCommandMap().values();
-
-        for (OrganiserCommand cmd : commands){
-            out.println(cmd.getName()+" - " + cmd.help());
-        }
-        postMessage(out);
-        out.flush();
+        ctx.need_close();
+        out.println("Bye!");
     }
 
     @Override
