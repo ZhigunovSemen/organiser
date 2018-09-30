@@ -1,3 +1,6 @@
+# Run
+Open project in Idea/Eclipse and run main[] method;
+
 # Test task
 Разработка программы "органайзер". 
 
